@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="grid-flow">
+  <header class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/leonel-giuliano">Leonel Giuliano</a>.
+  </header>
+
+  <main class="card grid-flow">
+    <div class="nft-container">
+      <img src="images/image-equilibrium.jpg" alt="Cube NFT" class="nft">
+      
+      <img src="images/icon-view.svg" alt="View" class="eye">
+    </div>
+
+    <article class="info grid-flow">
+      <h1 class="tittle">
+        Equilibrium #3429
+      </h1>
+
+      <p class="description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+
+      <div class="more-info flex-flow">
+        <div class="price flex-flow">
+          <img src="images/icon-ethereum.svg" alt="Ethereum" class="eth">
+          
+          0.041 ETH
+        </div>
+
+        <div class="time flex-flow">
+          <img src="images/icon-clock.svg" alt="Clock" class="clock">
+
+        3 days left
+        </div>
+      </div>
+
+      <div class="owner flex-flow">
+        <img src="images/image-avatar.png" alt="Jules Wyvern" class="avatar">
+
+        <p class="owner-txt">
+          Creation of 
+          
+          <span class="name">
+            Jules Wyvern
+          </span>
+        </p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

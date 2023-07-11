@@ -1,0 +1,153 @@
+:root {
+    --clr-background: 216, 55%, 11%;
+    --clr-card-background: 214, 50%, 16%;
+    --clr-tittle: 0, 0%, 100%;
+    --clr-etherum: 178, 100%, 50%;
+    --clr-p: 216, 50%, 70%;
+
+    --fs-p: 18px;
+    --ff: 'Outfit', sans-serif;
+    --fw-thin: 300;
+    --fw-regular: 400;
+    --fw-bold: 600;
+
+    --tran-duration: .2s;
+    --tran-function: ease-in;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-display: swap;
+    src: local('Outfit'),
+        url('fonts/Outfit-VariableFont_wght.ttf')
+        format('ttf');
+    font-weight: 100 900;
+}
+
+body {
+    font-family: var(--ff);
+    font-size: var(--fs-p);
+    font-weight: var(--fw-thin);
+    color: hsla(var(--clr-p));
+    background-color: hsla(var(--clr-background));
+}
+
+.grid-flow {
+    display: grid;
+    place-items: center;
+}
+
+.attribution {
+    position: absolute;
+    top: 0;
+}
+
+.card {
+    box-sizing: border-box;
+    grid-template-rows: 50%;
+    width: min(350px, 85%);
+    height: min(600px, 90%);
+    padding: 1.375rem;
+    background-color: hsla(var(--clr-card-background));
+    border-radius: 1rem;
+    box-shadow: 0 0 20px -8px #000;
+}
+
+.nft-container {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(var(--clr-etherum));
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+.nft-container:hover > .nft { opacity: .5; }
+
+.nft-container:hover > .eye { opacity: 1; }
+
+.eye {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity var(--tran-duration) var(--tran-function);
+}
+
+.nft {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity var(--tran-duration) var(--tran-function);
+
+}
+
+.info {
+    justify-items: start;
+    height: 100%;
+}
+
+.tittle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+    color: hsla(var(--clr-tittle));
+    transition: color var(--tran-duration) var(--tran-function);
+}
+
+.tittle:hover { color: hsla(var(--clr-etherum));}
+
+.description {
+    line-height: 1.5rem;
+    opacity: .75;
+}
+
+.flex-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more-info {
+    position: relative;
+    width: 100%;
+    font-weight: var(--fw-regular);
+}
+
+.more-info > * :first-child {
+    height: min-content;
+    padding-right: .5rem;
+}
+
+.price {
+    font-weight: var(--fw-bold);
+    color: hsla(var(--clr-etherum));
+}
+
+.owner { position: relative; }
+
+.owner::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+}
+
+.avatar {
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid hsla(var(--clr-tittle));
+}
+
+.owner-txt {
+    padding-left: 1rem;
+    font-weight: var(--fw-regular);
+}
+
+.name {
+    cursor: pointer;
+    color: hsla(var(--clr-tittle));
+    transition: color var(--tran-duration) var(--tran-function);
+}
+
+.name:hover { color: hsla(var(--clr-etherum)); }
