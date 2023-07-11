@@ -112,7 +112,9 @@ body {
 .more-info {
     position: relative;
     width: 100%;
+    height: 100%;
     font-weight: var(--fw-regular);
+    border-bottom: 1px solid hsla(var(--clr-p), .2);
 }
 
 .more-info > * :first-child {
@@ -123,14 +125,6 @@ body {
 .price {
     font-weight: var(--fw-bold);
     color: hsla(var(--clr-etherum));
-}
-
-.owner { position: relative; }
-
-.owner::after {
-    position: absolute;
-    content: '';
-    width: 100%;
 }
 
 .avatar {
