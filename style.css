@@ -44,7 +44,7 @@ body {
 
 .card {
     box-sizing: border-box;
-    grid-template-rows: 60%;
+    grid-template-rows: 50%;
     width: min(350px, 85%);
     height: min(600px, 90%);
     padding: 1.375rem;
